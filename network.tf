@@ -6,7 +6,7 @@ module "vpc" {
 
   azs             = ["${local.region}-1a", "${local.region}-1c"]
   public_subnets  = ["10.0.11.0/24", "10.0.12.0/24"]
-  private_subnets = ["10.0.1.0/24", "10.0.2.0/243"]
+  private_subnets = ["10.0.1.0/24", "10.0.2.0/24"]
 
   public_subnet_names  = ["Public Subnet 1a", "Public Subnet 1c"]
   private_subnet_names = ["Private Subnet 1a", "Private Subnet 1c"]
